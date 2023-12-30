@@ -39,3 +39,11 @@ function intern() {
     internWorker.goToWork();
     return internWorker;
 }
+
+// Task 4: Code a manager object, methods
+function manager() {
+    let managerWorker = new Worker("Alice", 30, 120, 100, 30);
+    managerWorker.doSomethingFun();
+    return managerWorker;
+
+}
