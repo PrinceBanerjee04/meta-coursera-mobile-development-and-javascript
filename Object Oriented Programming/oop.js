@@ -32,3 +32,10 @@ class Worker extends Person {
         this.energy -= 10; // Assuming working reduces energy
     }
 }
+
+// Task 3: Code an intern object, run methods
+function intern() {
+    let internWorker = new Worker("Bob", 21, 110, 0, 10);
+    internWorker.goToWork();
+    return internWorker;
+}
