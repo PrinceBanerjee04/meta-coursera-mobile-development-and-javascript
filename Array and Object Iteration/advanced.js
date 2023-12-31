@@ -8,3 +8,22 @@ function logDairy() {
 }
 
 logDairy();
+
+// Task 2
+const animal = {
+  canJump: true
+};
+
+const bird = Object.create(animal);
+bird.canFly = true;
+bird.hasFeathers = true;
+
+function birdCan() {
+  for (const key in bird) {
+    if (bird.hasOwnProperty(key)) {
+      console.log(`${key}: ${bird[key]}`);
+    }
+  }
+}
+
+birdCan();
