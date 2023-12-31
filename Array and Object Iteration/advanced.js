@@ -27,3 +27,19 @@ function birdCan() {
 }
 
 birdCan();
+
+// Task 3
+function animalCan() {
+  for (const key in bird) {
+    if (bird.hasOwnProperty(key)) {
+      console.log(`${key}: ${bird[key]}`);
+    }
+  }
+  for (const key in animal) {
+    if (animal.hasOwnProperty(key)) {
+      console.log(`${key}: ${animal[key]}`);
+    }
+  }
+}
+
+animalCan();
